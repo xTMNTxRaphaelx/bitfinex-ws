@@ -1,8 +1,8 @@
 const crypto = require("crypto-js"); // Standard JavaScript cryptography library
 const WebSocket = require("ws"); // Websocket library for Node
 
-const apiKey = "ggmlAUPrQE7wiAqHMkLWQLe7zsoY4xCW90v8dGVqd8H"; // Users API credentials are defined here
-const apiSecret = "rrc2IR62309lY9eb1lVvzFtYDgbADhdnRbv1cm7Jjxd";
+const apiKey = ""; // Users API credentials are defined here
+const apiSecret = "";
 
 const authNonce = Date.now() * 1000; // Generate an ever increasing, single use value. (a timestamp satisfies this criteria)
 const authPayload = "AUTH" + authNonce; // Compile the authentication payload, this is simply the string 'AUTH' prepended to the nonce value
